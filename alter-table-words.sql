@@ -1,0 +1,4 @@
+ALTER TABLE  `words`
+ADD `time_added` DATETIME NOT NULL
+DEFAULT '2024-09-1 15:50:00'
+AFTER `znachenie4`
