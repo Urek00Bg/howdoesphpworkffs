@@ -8,10 +8,10 @@ function signup_inputs(){
     if (isset($_SESSION["signup_data"]["username"]) && !isset($_SESSION["errors_signup"]["username_taken"])) {
        echo '<input type="text" name="username" placeholder="Username" value="'.$_SESSION["signup_data"]["username"] . '">';
     } else {
-        echo '<input type="text" name="username" placeholder="Username">';
+        echo '<input type="text" name="username" placeholder="Username"><br>';
     }
     
-    echo '<input type="password" name="pwd" placeholder="Password">';
+    echo '<input type="password" name="pwd" placeholder="Password"><br>';
 
 }
 

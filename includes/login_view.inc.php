@@ -6,7 +6,7 @@ function output_username(){
     if(isset($_SESSION["user_id"])){
         echo "Добре дошъл: ". $_SESSION["user_username"];
     }else{
-        echo "Не сте в акаунта си!";
+        echo "Моля влезте в акаунта си!";
     }
 }
 

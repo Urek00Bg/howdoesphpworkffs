@@ -1,0 +1,49 @@
+*{
+    overflow: hidden;
+}
+body{
+    background-color: rgb(236, 236, 236);
+    background-image: url(https://wallpapers.com/images/hd/1920-x-1080-hd-1qq8r4pnn8cmcew4.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    animation: background-change 30s alternate infinite;
+    color: white;
+    margin: 0%;
+    padding: 0%;
+}
+.middle{
+    text-align: center;
+}
+.body,.body2{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    height: 100vh;
+    background-color: rgba(36, 36, 36, 0.377);
+}
+input{
+    padding: 1%;
+    margin: .5% 0% .5% 0%;
+}
+.button{
+    padding: 1%;
+    margin: .5% 0% .5% 0%;
+}
+.form-holder{
+    text-align: center;
+}
+.section-1{
+    text-align: center;
+}
+.inputs{
+    display: flex; 
+    align-self: center;
+}
+
+
+.add{
+    display: inline;
+}
+@keyframes background-change {
+
+  }
