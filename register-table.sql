@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS register (registerNumber int NOT NULL AUTO_INCREMENT,studentNumber CHAR(255),studentClass CHAR(60),studentName CHAR(255), studentPass CHAR(64),PRIMARY KEY (registerNumber))

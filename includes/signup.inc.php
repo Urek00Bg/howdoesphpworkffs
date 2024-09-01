@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         if (is_input_empty($username, $pwd)){
             $errors["empty_input"] = "Запълнете всички полета";
         }
-        if(is_username_taken($pdo,$username)){
+        if (is_username_taken($pdo , $username)){
             $errors["username_taken"] = "Името е заето";
         }
 

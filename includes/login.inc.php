@@ -34,11 +34,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         }
 
         $newSessionId = session_create_id();
-        $sessionId = $newSessionId . "_" . $result["studentID"];
+        $sessionId = $newSessionId . "_" . $result["registerNumber"];
         session_id($sessionId);
 
         
-        $_SESSION["user_id"] = $result["studentID"];
+        $_SESSION["user_id"] = $result["registerNumber"];
         $_SESSION["user_username"] = htmlspecialchars($result["studentName"]);
         
         $_SESSION["last_regeneration"] = time();

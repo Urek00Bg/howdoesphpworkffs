@@ -1,0 +1,1 @@
+CREATE TABLE if NOT EXISTS words (ID INT NOT NULL AUTO_INCREMENT, duma CHAR(255), znachenie CHAR(255), znachenie2 CHAR(255), znachenie3 CHAR(255), znachenie4 CHAR(255), PRIMARY KEY (ID)),
