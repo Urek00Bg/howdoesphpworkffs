@@ -13,6 +13,6 @@ function check_dictionary_errors(){
         }
         unset($_SESSION["error_dict"]);
     }
-}
-;
+};
+
 

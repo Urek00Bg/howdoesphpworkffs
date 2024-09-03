@@ -11,6 +11,7 @@
         }
     }
 
+
     function is_username_taken(object $pdo ,string $username){
         if(get_username($pdo,$username)){
             return true;

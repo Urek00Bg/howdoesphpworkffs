@@ -17,13 +17,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         //ERROR HANDLERS
         $errors = [];
 
-        $dict = get_words($pdo);
 
-
-        if (is_input_empty($word,$meaning,$meaning2,$meaning3,$meaning4)){
+        if (is_input_empty($word,$meaning)){
             $errors["empty_input"] = "Запълнете всички полета";
         }
-
         if ($errors) {
             $_SESSION["error_dict"] = $errors;
             header("Location:../index.php");

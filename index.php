@@ -68,6 +68,14 @@ require_once 'includes/dictionary_view.inc.php';
                         </form>   
                     </div>
 
+                    <div class="big-box">
+                        <form class="searchform" action="search.php" method="post">
+                            <label for="search">Въведете дума на Български/Английски</label><br>
+                            <input id="search" type="text" name="usersearch" placeholder="tx име"><br>
+                            <button formtarget="_blank" class="search_butt">Търси</button>
+                        </form>
+                    </div>
+
                     <div class="section3">
                         <h3>Log out</h3>
                         <form action="includes/logout.inc.php" method="post">
@@ -75,6 +83,11 @@ require_once 'includes/dictionary_view.inc.php';
                         </form>
                     </div>
        <?php } ?>
+
+       <?php 
+
+
+       ?>
 
        <?php
     check_dictionary_errors()

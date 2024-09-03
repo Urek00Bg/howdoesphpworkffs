@@ -15,11 +15,3 @@ function insert_words(object $pdo,string $word, string $meaning,string $meaning2
     $stmt->bindParam(":znachenie4", $meaning4);
     $stmt->execute();
 }
-function get_words(object $pdo){
-    $query = "SELECT * FROM words order by time_added desc" ;
-    $stmt = $pdo->prepare($query);
-    $stmt->execute();
-
-    $results = $stmt->fetch(PDO::FETCH_ASSOC);
-    return $results;
-}
